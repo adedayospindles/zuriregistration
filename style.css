@@ -128,3 +128,27 @@ form a {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
 }
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 525px) {
+  .container {
+    background-image: url("images/bg-intro-mobile.png");
+    flex-direction: column;
+  }
+
+  form input {
+    padding: .50em;
+    margin-bottom: 0.75em;
+    font-weight: 400;
+    font-size: 65%;
+  }
+
+  .submitBtn {
+    font-size: 65%;
+  }
+}
