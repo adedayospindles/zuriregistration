@@ -89,7 +89,7 @@ form input {
 }
 
 form input:focus {
-  border: 1.8px solid #bbb;
+  border: 1px solid #bbb;
   font-weight: 600;
   letter-spacing: .5px;
 }
