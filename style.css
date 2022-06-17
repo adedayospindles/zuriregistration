@@ -1,3 +1,5 @@
+/* CSS Queries by Adedayo Agboola */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
@@ -6,14 +8,149 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3 {
+  font-weight:300;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background: #f2f4f7;
+  background: #333;
+  margin: 3% auto;
+  width: 75%;
+  max-width: 1080px;
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url("images/bg-intro-desktop.png");
+  background-color: #ff7f7f;
+  background-size: cover;
+  background-position: center;
+  padding: 3em;
+}
+
+.regform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.regform.content {
+  width: 100%;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.content p{
+  color: #fff;
+  font-size: 13px;
+}
+
+.regform.form {
+  width: 100%;
+}
+
+form {
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 6px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+h3.freetry {
+  border: 1px solid #1877f2;
+  border-radius: 6px;
+  padding: 10px;
+  background: #1877f2;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+form input {
+  outline: none;
+  padding: .75em;
+  margin-bottom: 0.75em;
+  font-weight: 400;
+  font-size: 13px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+}
+
+form input:focus {
+  border: 1px solid #bbb;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+form:hover {
+  background: #f4f4f4;
+}
+
+.field {
+  width: 100%;
+  display: grid;
+  text-align: left;
+}
+
+.parting-line {
+  font-size: 10px;
+  text-align: center;
+}
+
+form a {
+  text-decoration: none;
+  font-size: ;
+  color: red;
+}
+
+.submitBtn {
+  cursor: pointer;
+  width: 100%;
+  font-weight:600;
+  position: relative;
+  background: #50c878;
+  color: #fff;
+  padding: 15px;
+  outline: none;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 525px) {
+  .container {
+    background-image: url("images/bg-intro-mobile.png");
+    flex-direction: column;
+  }
+
+  form input {
+    padding: .50em;
+    margin-bottom: 0.75em;
+    font-weight: 400;
+    font-size: 65%;
+  }
+
+  .submitBtn {
+    font-size: 65%;
+  }
 }
